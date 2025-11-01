@@ -76,28 +76,29 @@ a {
 /* .std-backdrop-blur{-webkit-backdrop-filter:blur(12px);-moz-backdrop-filter:blur(12px);-ms-backdrop-filter:blur(12px)} */
 
 .cursor {
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
-  background-color: #A2D3D9;
-  position: fixed;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  z-index: 999999;
-  transition: 0.4s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity, 0.4s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #A2D3D9;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 999999;
+    transition: 0.4s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity, 0.4s cubic-bezier(0.75, -1.27, 0.3, 2.33) -webkit-transform;
 }
+
 .cursor2 {
-  width: 25px;
-  height: 25px;
-  border-radius: 100%;
-  border: 1px solid #ffffff;
-  transition: all 200ms ease-out;
-  position: fixed;
-  pointer-events: none;
-  left: 0;
-  top: 0;
-  z-index: 999999;
-  transform: translate(calc(-50% + 15px), -50%);
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    border: 1px solid #ffffff;
+    transition: all 200ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    z-index: 999999;
+    transform: translate(calc(-50% + 15px), -50%);
 }
 
 /* Mobile Screen */
@@ -123,6 +124,15 @@ a {
     }
 
     /* Start Banner Section */
+
+    #fixheader.sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+    }
+
     .heading strong .animate-wave {
         display: inline-block;
         animation: wave-animation 2s ease-in-out 1;
@@ -158,7 +168,7 @@ a {
         background: linear-gradient(90deg, rgba(217, 217, 217, .10) 0%, rgba(115, 115, 115, .10) 73%);
         -webkit-backdrop-filter: blur(12px);
         -moz-backdrop-filter: blur(12px);
-        -ms-backdrop-filter: blur(12px)
+        -ms-backdrop-filter: blur(12px);
     }
 
     .navbar .navbar-brand {
@@ -200,6 +210,7 @@ a {
         -webkit-background-clip: text;
         border-bottom: 2px solid;
         border-image: linear-gradient(to right, var(--dark-blue) 0%, var(--dark-blue) 9%, var(--white) 49%, var(--dark-blue) 85%, var(--dark-blue) 64%) 1;
+
     }
 
     /* End About Section */
@@ -246,6 +257,47 @@ a {
     }
 
     /* End Skill Section */
+
+    /* Start Project Section */
+    .project .card {
+        background: rgba(217, 217, 217, .10);
+    }
+
+    /* End Project Section */
+
+    /* Start Query Section */
+    .query {
+        background-image: linear-gradient(180deg, var(--dark-blue) 0%, rgb(74 128 168) 73%);
+        /* border-radius: 50px 50px 0 0;  */
+    }
+
+    /* End Query Section */
+
+    /* Start Footer Section */
+    footer .form-control {
+        background-color: #222;
+        border: 1px solid #444;
+        color: var(--white) !important;
+    }
+
+    footer .footer-container .mail-text {
+        background-image: linear-gradient(180deg, rgb(197 224 248) 0%, rgb(74 128 168) 73%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+
+    footer .form-control:focus {
+        background-color: #2a2a2a;
+        border-color: rgb(74 128 168);
+        box-shadow: none;
+    }
+
+    footer .form-control::placeholder {
+        color: #bbb !important;
+        opacity: 1;
+    }
+
+    /* End Footer Section */
 }
 
 /* Tablet Screen */
@@ -267,6 +319,9 @@ a {
     }
 
     /* End Skill Section */
+
+    /* Start Project Section */
+    /* End Project Section */
 }
 
 /* Small Laptop Screen */
@@ -295,8 +350,8 @@ a {
 
     /* End Banner Section */
 
-    /* Start Skill Section */
-    /* End Skill Section */
+    /* Start Project Section */
+    /* End Project Section */
 }
 
 /* Laptop Screen */
@@ -338,5 +393,8 @@ a {
     }
 
     /* End Skill Section */
+
+    /* Start Project Section */
+    /* End Project Section */
 
 }
